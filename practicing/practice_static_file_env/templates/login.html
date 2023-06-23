@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin App | Place</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="{{url_for('static', filename='nav.css')}}"/>
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}"/>
+
+    
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="nav">
+        <span>FlaskA</span>
+        <section>
+            <a href="/">Start</a>
+            <a href="/login">Login</a>
+        </section>
+    </nav>
+
+    <div class="index">
+        <!-- Form -->
+        <form class="form">
+
+            <section>
+                <h2>Login</h2>
+                <small>
+                    Please, fill the next field to enter to the dashboard.
+                </small>
+                <hr />
+            </section>
+
+            <label>
+                Name:
+                <input type="text" placeholder="" />
+            </label>
+
+            <button onclick="handleOnSubmit()">
+                Login
+            </button>
+        </form>
+    </div>
+</body>
+
+<script type="text/javascript" src="{{url_for('static', filename='main.js')}}"></script>
+</html>

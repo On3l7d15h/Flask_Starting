@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <a href="/">Start</a>
+        <a href="/newrec">New Book</a>
+        <a href="/list">Lis Books</a>
+    </nav>
+
+    <h1>Bookstore v1.0: List</h1>
+    <hr />
+    <p>These are your books!</p>
+
+    <table>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Year</th>
+        </tr>
+        {% for row in rows %}
+            <tr>
+                <td>{{row.title}}</td>
+                <td>{{row.author}}</td>
+                <td>{{row.year}}</td>
+            </tr>
+        {% endfor %}
+      </table> 
+</body>
+</html>

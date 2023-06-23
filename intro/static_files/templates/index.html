@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index | Flask App | v1.0</title>
+
+    <!-- To import static files -->
+    <script type="text/javascript" src="{{url_for('static', filename='index.js')}}"></script>
+</head>
+<body>
+    <h1>Hello {{name}}</h1>
+    <hr />
+    <p>
+        We're glad to see you here!
+    </p>
+    <button onclick="handleOnClick()">
+        Press me!
+    </button>
+</body>
+</html>
